@@ -1,0 +1,25 @@
+{
+  "name": "ansible-firewall",
+  "version": "0.1.0",
+  "homepage": "https://github.com/genesis/ansible-firewall",
+  "authors": [
+    "Evan Kaufman <evan@digitalflophouse.com>"
+  ],
+  "description": "Firewall and intrusion prevention, using iptables and fail2ban",
+  "main": "playbook.yml",
+  "keywords": [
+    "ansible",
+    "genesis",
+    "firewall",
+    "security"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
