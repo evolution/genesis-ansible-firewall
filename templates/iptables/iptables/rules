@@ -52,10 +52,10 @@ COMMIT
 #-A OUTPUT -o eth0 -p udp --sport 123 -j ACCEPT
 
 # Allow DNS
--A OUTPUT -o eth0 -p tcp --dport 53 -j ACCEPT
--A OUTPUT -o eth0 -p udp --dport 53 -j ACCEPT
--A INPUT -i eth0 -p tcp --sport 53 -j ACCEPT
--A INPUT -i eth0 -p udp --sport 53 -j ACCEPT
+#-A OUTPUT -o eth0 -p tcp --dport 53 -j ACCEPT
+#-A OUTPUT -o eth0 -p udp --dport 53 -j ACCEPT
+#-A INPUT -i eth0 -p tcp --sport 53 -j ACCEPT
+#-A INPUT -i eth0 -p udp --sport 53 -j ACCEPT
 
 # Log dropped packets
 -N LOGGING
