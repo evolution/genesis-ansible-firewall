@@ -5,13 +5,13 @@
       apt:            pkg=fail2ban update_cache=yes
       sudo:           yes
     - name:           Configure fail2ban
-      template:       src=fail2ban/${item} dest=/etc/fail2ban/${item} mode=0644
+      template:       src=fail2ban/{{item}} dest=/etc/fail2ban/{{item}} mode=0644
       with_items:
         - jail.local
         - filter.d/apache-wordpress.local
       sudo:           true
     - name:           Configure iptables-persistent
-      template:       src=iptables/${item} dest=/etc/${item} mode=0644
+      template:       src=iptables/{{item}} dest=/etc/{{item}} mode=0644
       with_items:
         - init.d/iptables-persistent
         - default/iptables-persistent.conf
